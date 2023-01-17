@@ -21,16 +21,12 @@ function App() {
   
   const [data,setData] = useState([])
   const getData= ()=>{
-       axios('data.json',{
-        headers:{
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      }).then(response=>{
-        setData(response.data)
-      })
+       axios('data.json').then((res)=>{
+        setData(res.data)
+       }).catch((err)=>{
+        console.log(err)
+       })
   }
-
   useEffect(()=>{
     getData()
     
