@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -26,6 +27,20 @@
 
 .App-link {
   color: #61dafb;
+}
+.marvel_title{
+  text-align: center;
+  margin-top: 10px;
+  z-index: 1;
+}
+.title{
+  display: inline;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 100px;
+  background-color: red;
+  color: white;
 }
 
 @keyframes App-logo-spin {
