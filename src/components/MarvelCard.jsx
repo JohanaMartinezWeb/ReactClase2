@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/marvelcard.css'
-
+//small change for humanity purposes
 function MarvelCard({id,image,logo,name,ability,type}){ //type puede ser Heroe o Villano
     return(
         <div className="marvelcard" key={id}>
