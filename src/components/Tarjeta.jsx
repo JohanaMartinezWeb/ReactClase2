@@ -1,5 +1,5 @@
 import React from "react";
-import Boton from './Boton';
+import Boton from "./Boton"
 
 const Tarjeta = () => {
     return (

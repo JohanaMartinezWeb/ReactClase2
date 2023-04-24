@@ -5,13 +5,13 @@ import axios from 'axios';
 // import Propiedades from './components/Propiedades';
 // import Tarjeta from './components/Tarjeta';
 // import Title from './components/Title';
-
 // import Lista from './components/Lista';
 // import Section from './components/Section';
 // import Contact from './components/Contact';
 
 
 function App() {
+
   // const LISTA = [
   //   {id: 1, titulo: 'Título uno'},
   //   {id: 2, titulo: 'Título dos'},
@@ -64,9 +64,23 @@ function App() {
           elementoJSX={<p>Hola, soy un párrafo</p>}
           componenteReact={<Contact/>}
         />
+      
+
+
+        
+      
         <Lista lista={LISTA}/>
+
+
+
+
+
+
           <Section>{string}</Section>
+
+
           <Section>Soy una seccion</Section> */}
+          
     </div>
   );
 }
