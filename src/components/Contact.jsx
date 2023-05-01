@@ -1,4 +1,5 @@
-import Boton from "./Boton"
+import Boton from "./Boton";
+
 
 const Contact = ()=>{
     return(
@@ -9,7 +10,7 @@ const Contact = ()=>{
                 <li>Teléfono: 011-1234567</li>
                 <li>Mail: academianumen@numen.com</li>
             </ul>
-            <Boton/>
+						<Boton/>
         </div>
     )
 }

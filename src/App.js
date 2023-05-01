@@ -1,25 +1,25 @@
-import './App.css';
+
 import MarvelCard from './components/MarvelCard';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-// import Propiedades from './components/Propiedades';
-// import Tarjeta from './components/Tarjeta';
-// import Title from './components/Title';
-// import Lista from './components/Lista';
-// import Section from './components/Section';
-// import Contact from './components/Contact';
+//  import Propiedades from './components/Propiedades';
+//  import Tarjeta from './components/Tarjeta';
+//  import Title from './components/Title';
+//  import Lista from './components/Lista';
+//  import Section from './components/Section';
+//  import Contact from './components/Contact';
 
 
 function App() {
 
-  // const LISTA = [
-  //   {id: 1, titulo: 'Título uno'},
-  //   {id: 2, titulo: 'Título dos'},
-  //   {id: 3, titulo: 'Título tres'},
-  // ]
-  // const string = "Contenido dinámico"
+   /* const LISTA = [
+     {id: 1, titulo: 'Título uno'},
+     {id: 2, titulo: 'Título dos'},
+     {id: 3, titulo: 'Título tres'},
+   ]
+   const string = "Contenido dinámico" */
   
-  const [data,setData] = useState([])
+   const [data,setData] = useState([])
   const getData= ()=>{
        axios('data.json').then((res)=>{
         setData(res.data)
@@ -30,7 +30,7 @@ function App() {
   useEffect(()=>{
     getData()
     
-  },[data])
+  },[data]) 
 
   
   return (
@@ -47,10 +47,10 @@ function App() {
         )
       })}
 
-
-
-        {/* <Title title="Este es el título"/>
+        
+{/* 					<Title title="Este es el título"/>
         <Tarjeta/>
+
         <Propiedades
           cadena="Hola, soy una cadena"
           numero={33}
@@ -71,16 +71,9 @@ function App() {
       
         <Lista lista={LISTA}/>
 
-
-
-
-
-
           <Section>{string}</Section>
-
-
-          <Section>Soy una seccion</Section> */}
-          
+          <Section>Soy una seccion</Section> */} 
+	
     </div>
   );
 }
